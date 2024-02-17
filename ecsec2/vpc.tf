@@ -282,7 +282,7 @@ resource "aws_vpc_security_group_egress_rule" "ecs_v6" {
 
 # Newer version with independent resources for each rule
 resource "aws_security_group" "vpce_sg" {
-  name   = "${local.name_prefix}-vpce1"
+  name   = "${local.name_prefix}-vpce"
   vpc_id = aws_vpc.main.id
 
   lifecycle {
